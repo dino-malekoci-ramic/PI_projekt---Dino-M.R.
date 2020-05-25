@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RealPhone mobiteli</title>
+    <link rel="stylesheet" href="stranica1.css">
+</head>
+<body>
+    <div class="pozadina">
+        <nav>
+            <div class="logo">
+                <img src="slike/logo.png">
+            </div>
+            <div class="navigacija">
+                <ul>
+                    <li><a href="početna.html">Početna</a></li>
+                    <li><a href="mobitel.html">Mobitel</a></li>
+                    <li><a href="dodatno.html">Dodatno</a></li>
+                    <li><a href="košarica.html">Košarica</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="informacije">
+            <div class="prekrivanje"></div>
+            <img src="slike/mobile.png" class="mobitel">
+            <div id="krug">
+
+                <div class="svojstvo jedan">
+                    <img src="slike/camera.png">
+                    <div>
+                        <h1>Kamera</h1>
+                        <p>24MP, širokokutna(Wide Angle)</p>
+                    </div>
+                </div>
+                <div class="svojstvo dva">
+                    <img src="slike/processor.png">
+                    <div>
+                        <h1>Procesor</h1>
+                        <p>Snapdragon Octa-core 11nm</p>
+                    </div>
+                </div>
+                <div class="svojstvo tri">
+                    <img src="slike/display.png">
+                    <div>
+                        <h1>Ekran</h1>
+                        <p>6.5" Mini-Drop Fullscreen</p>
+                    </div>
+                </div>
+                <div class="svojstvo četiri">
+                    <img src="slike/battery.png">
+                    <div>
+                        <h1>Baterija</h1>
+                        <p>4800mAh</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="kontrole">
+            <img src="slike/arrow.png" id="Gore">
+            <h3>Značajke</h3>
+            <img src="slike/arrow.png" id="Dole">
+        </div>
+    </div>
+    <script>
+        var circle = document.getElementById("krug");
+        var gore = document.getElementById("Gore");
+        var dole = document.getElementById("Dole");
+        var rotate = circle.style.transform;
+        var rotate2;
+        Gore.onclick = function()
+        {
+            rotate2 = rotate + "rotate(-90deg)";
+            circle.style.transform = rotate2;
+            rotate = rotate2;
+        }
+        Dole.onclick = function()
+        {
+            rotate2 = rotate + "rotate(90deg)";
+            circle.style.transform = rotate2;
+            rotate = rotate2;
+        }
+    </script>
+</body>
+</html>
